@@ -16,7 +16,7 @@ This service incorporates the following services Kafka, AWS EC2 instance, S3 buc
 - cd kafka_2.13-3.6.1
 - bin/zookeeper-server-start.sh config/zookeeper.properties
 
-#### Start Zookeeper on console 2
+#### Start Kafka Server on console 2
 - export KAFKA_HEAP_OPTS="-Xmx256M -Xms128M" (Assigning memory to it)
 - cd kafka_2.13-3.6.1
 - bin/kafka-server-start.sh config/zookeeper.properties
