@@ -1,4 +1,5 @@
 # Real Time Data Streaming Application
+This service incorporates the following services Kafka, AWS EC2 instance, S3 bucket, Glue, Athena
 
 
 ### Setting up Apache Kafka
