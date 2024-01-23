@@ -101,4 +101,4 @@ Fields include:
 - Include/create a database to run with it
 - Click on the newly created crawler & run it (This will create a schema in the new db using data from the datasource [s3 bucket])
 - Go to Athena (Enables querying the created DB) & verify that the table has now been created & populated with the new data
-NB: This crawler is to run only once to create the schema.
+NB: This crawler is to run only once to create the schema. Also when using Athena & error == `No output location provided. An output location is required either through the Workgroup result configuration setting or as an API input.` just allocate an s3 bucket to save the output.
