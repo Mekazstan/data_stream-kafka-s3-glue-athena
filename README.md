@@ -97,7 +97,8 @@ Fields include:
 - bin/kafka-console-consumer.sh --topic order_transactions --bootstrap-server {public_ip}:9092
 
 #### AWS Glue + Athena
-- Setup AWS Glue including IAM role with Administrator access
+- Setup AWS Glue crawler using the s3 bucket as it's data source, including a Glue IAM role with Administrator access
 - Include/create a database to run with it
-- Click on the newly created crawler & run it 
-- Go to Athena & verify that the table has now been created & populated with the new data
+- Click on the newly created crawler & run it (This will create a schema in the new db using data from the datasource [s3 bucket])
+- Go to Athena (Enables querying the created DB) & verify that the table has now been created & populated with the new data
+NB: This crawler is to run only once to create the schema.
