@@ -80,18 +80,18 @@ Fields include:
 #### Start Kafka Server on console 2
 - export KAFKA_HEAP_OPTS="-Xmx256M -Xms128M" (Assigning memory to it)
 - cd kafka_2.13-3.6.1
-- bin/kafka-server-start.sh config/zookeeper.properties
+- bin/kafka-server-start.sh config/server.properties
 - sudo nano config/server.properties (change ADVERTISED_LISTENERS to public ip of the ec2 instance)
 
 #### Creating the Kafka Topic on console 3
 - cd kafka_2.13-3.6.1
-- bin/kafka-topics.sh --create --topic orderTransactions --bootstrap-server {public_ip}:9092 --replication-factor 1 --partitions 1 
+- bin/kafka-topics.sh --create --topic order_transactions --bootstrap-server {public_ip}:9092 --replication-factor 1 --partitions 1 
 - bin/kafka-topics.sh --bootstrap-server {public_ip}:9092 --list (To verify topic creation successfull)
 
 #### Starting the Kafka Producer
 - cd kafka_2.13-3.6.1
-- bin/kafka-console-producer.sh --topic orderTransactions --bootstrap-server {public_ip}:9092
+- bin/kafka-console-producer.sh --topic order_transactions --bootstrap-server {public_ip}:9092
 
 #### Starting the Kafka Consumer on console 4
 - cd kafka_2.13-3.6.1
-- bin/kafka-console-consumer.sh --topic orderTransactions --bootstrap-server {public_ip}:9092
+- bin/kafka-console-consumer.sh --topic order_transactions --bootstrap-server {public_ip}:9092
