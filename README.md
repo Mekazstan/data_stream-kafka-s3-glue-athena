@@ -95,7 +95,7 @@ Fields include:
 #### Starting the Kafka Consumer on console 4
 - cd kafka_2.13-3.6.1
 - bin/kafka-console-consumer.sh --topic order_transactions --bootstrap-server {public_ip}:9092
-
+ws
 #### AWS Glue + Athena
 - Setup AWS Glue crawler using the s3 bucket as it's data source, including a Glue IAM role with Administrator access
 - Include/create a database to run with it
