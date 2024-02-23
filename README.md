@@ -80,4 +80,4 @@ Note: The Glue crawler needs to be run only once to create the schema. If encoun
 
 #### Starting the Kafka Consumer on console 4
 - cd kafka_2.13-3.6.1
-- bin/kafka-console-consumer.sh --topic order_transactions --bootstrap-server {public_ip}:9092 ==> Statt
+- bin/kafka-console-consumer.sh --topic order_transactions --bootstrap-server {public_ip}:9092
