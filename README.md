@@ -1,6 +1,4 @@
 ![alt text](https://github.com/Mekazstan/data_stream-kafka-s3-glue-athena/blob/main/architecture.png)
-
-
 # Real Time Data Streaming Application
 This project implements a real-time data streaming application using various services such as Kafka, AWS EC2 instance, S3 bucket, Glue, and Athena to simulate an ETL (Extract, Transform, Load) process.
 
